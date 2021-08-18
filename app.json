@@ -1,12 +1,51 @@
 {
-  "name": "Telegram Quran Reader Bot",
-  "description": "A Telegram Bot That Help To Read Quran without closing Telegram",
-  "logo": "https://telegra.ph/file/38f2476dd1fad56334403.jpg",
-  "repository": "https://github.com/Achu2234/TelegramQuranReader",
-  "env": {
-    "TOKEN": {
-      "description": "Enter Bot Token from @BotFather",
-      "required": true
-    }
-  }
+
+    "name": "Background-Remover-Bot",
+
+    "description": "A media background remover telegram bot with pyrogram framework.",
+
+    "repository": "https://github.com/FayasNoushad/Remove-BG-Bot",
+
+    "keywords": ["removebg api", "photo", "background remover","telegram bot"],
+
+    "env": {
+
+        "BOT_TOKEN": {
+
+            "description": "Your Bot token from @Botfather"
+
+        },
+
+        "API_ID": {
+
+            "description": "Your API_ID from https://my.telegram.org/apps"
+
+        },
+
+        "API_HASH": {
+
+            "description": "Your API_HASH from https://my.telegram.org/apps"
+
+        },
+
+        "REMOVEBG_API": {
+
+            "description": "Your remove bg api from remove.bg/api",
+
+            "required": false
+
+        },
+
+        "UNSCREEN_API": {
+
+            "description": "Your unscreen api from api.unscreen.com",
+
+            "required": false
+
+        }
+
+    },
+
+    "buildpacks": [{"url": "heroku/python"}]
+
 }
